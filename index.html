@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
+    <title>Home - Your Name</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section id="intro">
-            <img src="assets/images/profile.jpg" alt="Your Avatar">
-            <h1>Your Name</h1>
-            <p>Your Tagline</p>
+        <!-- Intro Section -->
+        <section id="home-intro">
+            <div class="intro-container">
+                <img src="assets/images/avatar.png" alt="Professional Avatar" class="avatar">
+                <h1>Welcome! I'm Sal Delgado</h1>
+                <p class="tagline">"A passionate developer crafting elegant solutions for complex problems."</p>
+                <p class="brief-bio">
+                    Welcome! I'm a dedicated breathwork practitioner I guide individuals on a transformative journey of self-discovery and healing through the power of breath. With a deep understanding of somatic breathwork techniques, I create a safe and nurturing space for you to explore and release physical, emotional, and mental blockages. My approach is rooted in the belief that the breath is a profound tool for accessing inner wisdom, reducing stress, and fostering holistic well-being. Whether you’re seeking to connect more deeply with yourself, manage anxiety, or enhance your overall vitality, I am here to support you every step of the way on your path to greater peace and clarity.
+
+Also currently honing my craft as a Computer Science student at CSU Fullerton. I'm a web developer, software engineer, and data enthusiast. My journey through code and pixels is driven by a deep fascination with the possibilities of Machine Learning, Augmented Reality, Mixed Reality, Stable Diffusion, and Warp Fusion. As I navigate the ever-evolving tech landscape, my goal is to harness these technologies to build innovative solutions that resonate with users and spark progress. Join me as I meld academic rigor with real-world application, all while championing AI ethics to ensure technology remains a force for good. Let's create, innovate, and elevate together.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2024 Your Name</p>
+        <p>&copy; 2024 Sal Delgado. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js" defer></script>
+
 </body>
 </html>
