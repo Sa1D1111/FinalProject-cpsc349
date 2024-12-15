@@ -39,7 +39,7 @@ You can view the live version of the website [here](https://yourwebsite.com).
   - JavaScript
 - **Tools & Libraries**:
   - Formspree (for contact form submissions)
-  - GitHub Pages or Vercel (for hosting)
+  - GitHub Pages (for hosting)
 - **Design**:
   - Responsive Design with Flexbox and Grid
   - Modern UI with Hover Effects
@@ -52,3 +52,12 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-portfolio.git
+
+
+
+Navigate to the project folder:
+
+   ```bash
+    cd FinalProject
+
+Open index.html in your browser or use a live server extension in your code editor.
