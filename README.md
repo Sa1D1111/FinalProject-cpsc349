@@ -60,4 +60,5 @@ Navigate to the project folder:
    ```bash
     cd FinalProject
 
-Open index.html in your browser or use a live server extension in your code editor.
+
+    Open index.html in your browser or use a live server extension in your code editor.
