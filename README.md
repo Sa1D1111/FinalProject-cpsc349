@@ -51,7 +51,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone https://github.com/Sa1D1111/FinalProject-cpsc349.git
 
 
 Open index.html in your browser or use a live server extension in your code editor.
@@ -59,4 +59,4 @@ Open index.html in your browser or use a live server extension in your code edit
 First Navigate to the project folder:
 
    ```bash
-    cd FinalProject
+   cd FinalProject
