@@ -56,7 +56,7 @@ To run this project locally:
 
 Open index.html in your browser or use a live server extension in your code editor.
 
-Navigate to the project folder:
+First Navigate to the project folder:
 
    ```bash
     cd FinalProject
