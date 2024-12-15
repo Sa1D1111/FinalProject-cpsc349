@@ -216,3 +216,22 @@ header nav ul li a.active::after {
     bottom: -5px;
     left: 0;
 }
+
+
+
+/* Resume Button */
+.resume-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #e64a19;
+}
