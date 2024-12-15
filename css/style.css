@@ -13,6 +13,7 @@ header nav {
     background-color: #222;
     padding: 1rem;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -20,46 +21,43 @@ header nav ul {
     margin: 0;
     padding: 0;
 }
+
 header nav ul li {
     margin: 0 1rem;
 }
+
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s;
-}
-header nav ul li a:hover {
-    color: #ff5733;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
 }
 
-/* Intro Section */
-#home-intro {
-    text-align: center;
-    padding: 4rem 1rem;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+header nav ul li a:hover {
+    color: #ff5733;
+    transform: translateY(-2px);
 }
-.intro-container {
-    max-width: 800px;
-    margin: 0 auto;
+
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff5733;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+header nav ul li a:hover::after {
+    width: 100%;
 }
-.tagline {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #555;
-    margin: 1rem 0;
-}
-.brief-bio {
-    font-size: 1rem;
-    color: #666;
+
+header nav ul li a.active {
+    color: #ff5733;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -71,9 +69,114 @@ footer {
     margin-top: 2rem;
 }
 
+/* Intro Section */
+#home-intro {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Avatar Image */
+.avatar {
+    width: 350px; /* Adjust to your preferred size */
+    height: auto; /* Ensure square dimensions for circular shape */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fits nicely within the circle */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    margin: 0 auto 1rem auto; /* Centers the image */
+    display: block; /* Centers the block element */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Enhances the shadow effect */
+    cursor: default; /* Ensures the cursor does not show a pointer hand */
+}
+
+/* Ripple Effect on Hover */
+.avatar:hover::after {
+    content: '';
+    position: absolute;
+    width: 150px; /* Same size as the image */
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 87, 51, 0.2); /* Subtle ripple color */
+    animation: ripple 0.6s ease-out infinite; /* Ripple animation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .avatar-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    
+/* Ripple Animation Keyframes */
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5); /* Expands the ripple */
+        opacity: 0; /* Fades out */
+    }
+}
 
 
-/* Navigation Links Hover Effects */
+/* Text Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.brief-bio {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .brief-bio {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 header nav ul li a {
     color: white;
     text-decoration: none;
@@ -94,20 +197,22 @@ header nav ul li a::after {
     left: 0;
 }
 
+header nav ul li a:hover::after {
+    width: 100%; /* Shows the underline on hover */
+}
+
 header nav ul li a:hover {
-    color: #ff5733;
+    color: #ff5733; /* Optional: Change color when hovered */
     transform: translateY(-2px);
 }
 
-header nav ul li a:hover::after {
-    width: 100%;
-}
-
-
-
-/* about css */
-
-nav ul li a.active {
-    color: #ff5733;
-    font-weight: bold;
+header nav ul li a.active::after {
+    content: '';
+    display: block;
+    width: 100%; /* Full underline for the active link */
+    height: 2px;
+    background: #ff5733;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }

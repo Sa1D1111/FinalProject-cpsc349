@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sal Delgado</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-section">
+            <h1>Contact Me</h1>
+            <p class="contact-intro">
+                Have questions or want to work together? Get in touch!
+            </p>
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:sal.delgado@example.com">sal.delgado@example.com</a></li>
+                        <li><strong>Phone:</strong> (123) 456-7890</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saldelgado1/" target="_blank">linkedin.com/in/sal-delgado</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/sa1d1111" target="_blank">github.com/sa1d1111</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form action="https://formspree.io/f/mnqlrqwr" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sal Delgado. All rights reserved.</p>
+    </footer>
+</body>
+</html>
